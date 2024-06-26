@@ -2,7 +2,7 @@
 
 html, body {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     font-family: 'Manrope', sans-serif;
 }
 
@@ -13,7 +13,6 @@ html, body {
     border-radius: 10px;
     gap: 36px;
     background-color: #EBF0FA;
-    margin: 20px;
 }
 
 .main-container > img {
@@ -26,7 +25,7 @@ html, body {
 
 .info-container {
     width: 538px;
-    padding: 72px;
+    padding: 24px;
 }
 
 .info-container > h2 {
@@ -61,7 +60,6 @@ html, body {
     text-decoration: none;
 }
 
-
 @media (min-width: 1920px) {
     .main-container {
         gap: 190px;
@@ -71,6 +69,9 @@ html, body {
 @media (min-width: 1440px) and (max-width: 1919px) {
     .main-container {
         gap: 36px;
+    }
+    .info-container {
+        padding: 72px;
     }
 }
 
@@ -82,12 +83,13 @@ html, body {
     .main-container > img {
         width: 100%;
         height: auto;
-        border-radius: 10px 10px 0 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 
     .info-container {
-        width: 100%;
-        padding: 24px;
+        width: calc(100% - 48px);
+        padding: 24x;
     }
 }
 
@@ -99,11 +101,17 @@ html, body {
     .main-container > img {
         width: 100%;
         height: auto;
-        border-radius: 10px 10px 0 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 
     .info-container {
-        width: 100%;
+        width: calc(100% - 48px);
         padding: 24px;
+    }
+
+    .info-container > button {
+        align-self: center;
+        justify-self: center;
     }
 }
