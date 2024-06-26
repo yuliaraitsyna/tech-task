@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    gap: 36px;
+    background-color: #EBF0FA;
+    margin: 20px;
+}
+
+.main-container > img {
+    height: 456px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    object-fit: cover;
+    width: 50%;
+}
+
+.info-container {
+    width: 538px;
+    padding: 72px;
+}
+
+.info-container > h2 {
+    font-weight: 500;
+    font-size: 30px;
+    color: #1F4284;
+}
+
+.info-container > p {
+    font-weight: 400;
+    color: #727272;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.info-container > button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #1F4284;
+    border-radius: 60px;
+    height: 68px;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.info-container > button a {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+@media (min-width: 1920px) {
+    .main-container {
+        gap: 190px;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+    .main-container {
+        gap: 36px;
+    }
+}
+
+@media (max-width: 1439px) and (min-width: 765px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .main-container > img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .info-container {
+        width: 100%;
+        padding: 24px;
+    }
+}
+
+@media (max-width: 764px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .main-container > img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .info-container {
+        width: 100%;
+        padding: 24px;
+    }
+}

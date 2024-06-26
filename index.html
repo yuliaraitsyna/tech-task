@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Demo version</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="info-container">
+            <h2>Демо-версия</h2>
+            <p>
+                За 18 лет деятельности было реализовано более 500 крупных, а так же, 
+                не менее 2500 средних и малых проектов. Используя знания и накопленный 
+                опыт мы можем предложить
+            </p>
+            <button>
+                <a>Попробовать бесплатно</a>
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="36" height="36" rx="18" fill="white"/>
+                    <path d="M13 13H23V23" stroke="#1F4284" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13 23L23 13" stroke="#1F4284" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <img src="img.png" alt="Demo Image">
+    </div>
+    <div class="modal hidden">
+        <form class="modal-content">
+            <button class="close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>   
+            </button>
+            <h2>Войти в систему</h2>
+            <input type="text" placeholder="Email/Телефон">
+            <input type="password" placeholder="Пароль">
+            <div>
+                <input type="checkbox" id="remember">
+                <label for="remember">Запомнить пароль</label>
+            </div>
+            <a href="#">Восстановить</a>
+            <button class="login-btn" type="submit">Войти</button>
+            <button class="register-btn">Зарегистрироваться</button>
+        </form>
+    </div>
+</body>
+</html>
