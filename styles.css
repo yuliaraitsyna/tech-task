@@ -148,8 +148,10 @@ html, body {
 }
 
 .modal-content .register-btn {
-    background-color: #ccc;
-    color: black;
+    background-color: transparent;
+    color: #244C98;
+    border:solid #244C98 1px;
+    border-radius: 4px;
 }
 
 @media (min-width: 1920px) {
